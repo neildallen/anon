@@ -32,6 +32,7 @@ body {
   /* override for children like .carousel */
   width: 100%;
   text-align: center;
+
 }
 
 .logo {
@@ -45,6 +46,7 @@ body {
 
 #anon-title {
   font-size: 64px;
+  padding-bottom: 10px;
   /* text-transform: capitalize; */
   /* margin-bottom: 1.5rem; */
 }
@@ -138,6 +140,7 @@ body {
   cursor: pointer;
   transform-origin: center;
   text-decoration: none;
+  margin-top: 20px;
 
 }
 
