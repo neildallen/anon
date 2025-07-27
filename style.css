@@ -61,7 +61,7 @@ body {
   border-radius: 12px;
   font-size: 24px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   border: 2px solid white;
   width: 800px;
@@ -76,6 +76,7 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin-left: 10px;
 }
 
 .carousel {
