@@ -1,7 +1,12 @@
 // GSAP Animations
 window.onload = () => {
   gsap.from(".logo", { y: -100, opacity: 0, ease: "bounce", duration: 1 });
-
+  // gsap.to(".animated-bg", {
+  //   backgroundPosition: "200% 0%",
+  //   duration: 5,
+  //   ease: "linear",
+  //   repeat: -1
+  // });
   gsap.to("#anon-title span", {
     opacity: 1,
     y: 0,
@@ -19,6 +24,7 @@ window.onload = () => {
     delay: 1
   });
 };
+
 
 // Copy CA functionality
 document.getElementById("copy-btn").addEventListener("click", () => {
