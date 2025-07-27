@@ -44,8 +44,8 @@ body {
 
 
 #anon-title {
-  font-size: 56px;
-  text-transform: capitalize;
+  font-size: 64px;
+  /* text-transform: capitalize; */
   /* margin-bottom: 1.5rem; */
 }
 
