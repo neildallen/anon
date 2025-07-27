@@ -29,11 +29,21 @@ document.getElementById("copy-btn").addEventListener("click", () => {
 });
 
 // Simple Carousel
-let index = 0;
-const images = document.querySelectorAll(".carousel-img");
+const track = document.querySelector(".carousel-track");
+const images = track.querySelectorAll("img");
+const imageWidth = 400 + 20; // 400px width + 20px gap
+const visibleCount = 5;
+let currentIndex = 0;
 
 setInterval(() => {
-  images[index].classList.remove("active");
-  index = (index + 1) % images.length;
-  images[index].classList.add("active");
+  currentIndex++;
+  const maxIndex = images.length - visibleCount;
+  if (currentIndex > maxIndex) currentIndex = 0;
+
+  const offset = -currentIndex * imageWidth;
+  gsap.to(track, {
+    x: offset,
+    duration: 0.5,
+    ease: "power2.inOut"
+  });
 }, 2000);
